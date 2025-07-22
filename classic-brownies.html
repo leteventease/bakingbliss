@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Brownies - Baking Bliss</title>
+    <link rel="stylesheet" href="D:\Study\Documents\baiku\indexneww.css">
+    <style>
+        /* Body Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-image: url('assortment-delicious-healthy-recipe-ingredients.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            opacity: 0;
+            animation: fadeInBackground 0.3s forwards; /* Faster fade-in background */
+        }
+
+        @keyframes fadeInBackground {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Header animation */
+        header, h1 {
+            text-align: center;
+            color: #333; /* Original font color */
+            font-size: 2.2rem; /* Smaller font size */
+            margin-top: 10px; /* Moved heading even higher */
+            opacity: 0;
+            animation: slideInFromLeft 0.5s 0.2s forwards; /* Faster slide-in animation */
+        }
+
+        @keyframes slideInFromLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Main content container animation */
+        main {
+            margin-top: 5px; /* Further reduce top margin */
+            color: #333; /* Keep original font color */
+            opacity: 0;
+            animation: fadeInMainContent 0.5s 0.5s forwards; /* Faster fade-in with delay */
+        }
+
+        @keyframes fadeInMainContent {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Section Styles (Ingredients, Method) */
+        section {
+            margin: 5px 0; /* Further reduced margin for sections */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            animation: slideInUp 0.5s 1s forwards; /* Faster slide-in effect */
+        }
+
+        @keyframes slideInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Link Animation */
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #007BFF; /* Keep original link color */
+            font-weight: bold;
+            opacity: 0;
+            animation: fadeInLink 0.5s 1.2s forwards; /* Faster fade-in link */
+        }
+
+        @keyframes fadeInLink {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px; /* Reduced footer margin */
+            opacity: 0;
+            animation: slideInFooter 0.5s 1.5s forwards;
+        }
+
+        @keyframes slideInFooter {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Hover effect for link */
+        a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            body {
+                font-size: 90%;
+            }
+
+            h1 {
+                font-size: 1.8rem; /* Adjusted heading size on smaller screens */
+            }
+
+            section {
+                padding: 15px;
+                margin: 5px 0; /* Reduced section margin */
+            }
+
+            main {
+                padding: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Classic Brownies</h1>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Ingredients</h2>
+            <ul>
+                <li>1/2 cup (1 stick) unsalted butter</li>
+                <li>1 cup granulated sugar</li>
+                <li>2 large eggs</li>
+                <li>1 teaspoon vanilla extract</li>
+                <li>1/3 cup unsweetened cocoa powder</li>
+                <li>1/2 cup all-purpose flour</li>
+                <li>1/4 teaspoon salt</li>
+                <li>1/4 teaspoon baking powder</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Baking Method</h2>
+            <ol>
+                <li>Preheat your oven to 350°F (180°C). Grease a 9x9-inch baking dish.</li>
+                <li>In a medium saucepan, melt the butter. Remove from heat and stir in the sugar, eggs, and vanilla.</li>
+                <li>Add cocoa, flour, salt, and baking powder. Mix until well combined.</li>
+                <li>Spread the batter into the prepared baking dish.</li>
+                <li>Bake for 20-25 minutes. Let cool before cutting into squares.</li>
+            </ol>
+        </section>
+        
+        <section>
+            <a href="D:\Study\Documents\baiku\indexnew.html">Back to Recipes</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Baking Bliss. All rights reserved.</p>
+    </footer>
+</body>
+</html>

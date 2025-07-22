@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#game-container {
+  position: relative;
+}
+
+#gameCanvas {
+  background-color: #87CEEB; /* Sky blue background (replace with your background image) */
+  display: block;
+  margin: 0 auto;
+  border: 2px solid black;
+}
+
+#score-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 20px;
+  color: white;
+  z-index: 2;
+}

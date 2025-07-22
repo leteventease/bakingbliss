@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Our Community</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        #success-message {
+            display: none;
+            margin-top: 20px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <form id="registrationForm">
+        <h2>Join Our Community</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="number">Number:</label>
+        <input type="text" id="number" name="number" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="reason">Why are you joining:</label>
+        <textarea id="reason" name="reason" rows="4" required></textarea>
+        
+        <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+    <div id="success-message">
+        <p>Registration complete. <a href="YOUR_WHATSAPP_GROUP_LINK" target="_blank">Join the WhatsApp group here</a>.</p>
+    </div>
+
+    <script>
+        function submitForm() {
+            const name = document.getElementById('name').value;
+            const number = document.getElementById('number').value;
+            const email = document.getElementById('email').value;
+            const reason = document.getElementById('reason').value;
+
+            // Create the user data as a string
+            const userData = `Name: ${name}\nNumber: ${number}\nEmail: ${email}\nReason for joining: ${reason}\n\n`;
+
+            // Create a blob and generate a download link for the file
+            const blob = new Blob([userData], { type: 'text/plain' });
+            const link = document.createElement('a');
+            link.href = window.URL.createObjectURL(blob);
+            link.download = 'user_registration.txt';  // This will download as a text file
+            link.click();
+
+            // Show the success message with the WhatsApp link
+            document.getElementById('registrationForm').style.display = 'none';
+            document.getElementById('success-message').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

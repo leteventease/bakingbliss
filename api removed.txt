@@ -1,0 +1,28 @@
+// Function to search Spoonacular API for baking recipes
+async function searchAPI(ingredients) {
+    const apiKey = '7ac282e3e5554ca5bfcc8c80696f8048'; // Replace with your actual Spoonacular API key
+    const apiUrl = `https://api.spoonacular.com/recipes/findByIngredients?ingredients=${ingredients.join(',')}&apiKey=${apiKey}`;
+    try {
+        const response = await fetch(apiUrl);
+        const data = await response.json();
+        return data.map(recipe => recipe.title);
+    } catch (error) {
+        console.error('Error fetching recipes from API:', error);
+        return [];
+    }
+}
+
+// Function to display results
+function displayResults(results) {
+    const resultDiv = document.getElementById('result');
+    resultDiv.innerHTML = results.length > 0 
+        ? `<h3>You can make:</h3><ul>${results.map(recipe => {
+            // Check if the recipe is in the existing recipes
+            if (recipes.hasOwnProperty(recipe)) {
+                return `<li><a href="${recipe.toLowerCase().replace(/ /g, '-')}.html">${recipe}</a></li>`;
+            } else {
+                return `<li>${recipe}</li>`; // For API results, just display the name
+            }
+        }).join('')}</ul>` 
+        : "<h3>No recipes found with the provided ingredients.</h3>";
+}
