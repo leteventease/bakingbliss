@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baking Bliss</title>
+    <link rel="stylesheet" href="indexneww.css">
+</head>
+<body>
+    <header>
+        <h1 class="fade-in">Baking Bliss</h1>
+        <nav>
+            <ul>
+                <li class="recipes"><a href="#recipes">Recipes</a></li>
+                <li class="find-recipes"><a href="#find-recipes">Find Recipes</a></li>
+                <li class="about"><a href="#about">About</a></li>
+                <li class="contact"><a href="#contact">Contact</a></li>
+                <li class="join-community"><a href="join-community.html">Join Our Community</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="hero">
+            <h2 class="fade-in">Welcome to Your Baking Adventure!</h2>
+            <p class="fade-in">Discover delicious recipes and baking tips.</p>
+        </section>
+
+        <section id="find-recipes">
+            <h2 class="fade-in">Find Recipes</h2>
+            <input type="text" id="ingredients-input" placeholder="Enter ingredients (comma-separated)" class="fade-in">
+            <button class="fade-in" onclick="findRecipes()">OK</button>
+            <div id="result" class="fade-in"></div>
+        </section>
+
+        <section id="recipes">
+            <h2 class="fade-in">Featured Recipes</h2>
+            <div class="recipe-grid">
+                <div class="recipe-item">
+                    <a href="chocolate-chip-cookies.html">
+                        <img src="chocolate-chip-gluten-free-cookies.jpg" alt="Chocolate Chip Cookies">
+                        <p>Chocolate Chip Cookies</p>
+                    </a>
+                </div>
+                <div class="recipe-item">
+                    <a href="classic-brownies.html">
+                        <img src="tasty-homemade-tiramisu-cake.jpg" alt="Classic Brownies">
+                        <p>Classic Brownies</p>
+                    </a>
+                </div>
+                <div class="recipe-item">
+                    <a href="vanilla-cupcakes.html">
+                        <img src="cupcake-served-plate.jpg" alt="Vanilla Cupcakes">
+                        <p>Vanilla Cupcakes</p>
+                    </a>
+                </div>
+                <div class="recipe-item">
+                    <a href="fresh-berry-tart.html">
+                        <img src="homemade-summer-berry-tar-pie-different-berries-golden-raspberry-blackberry-red-currant-raspberry-black-currant-top-view.jpg" alt="Fresh Berry Tart">
+                        <p>Fresh Berry Tart</p>
+                    </a>
+                </div>
+                <div class="recipe-item">
+                    <a href="cinnamon-rolls.html">
+                        <img src="top-view-cinnamon-roll-sticks.jpg" alt="Cinnamon Rolls">
+                        <p>Cinnamon Rolls</p>
+                    </a>
+                </div>
+                <div class="recipe-item">
+                    <a href="muffins.html">
+                        <img src="banana-cupcakes-mixed-with-chocolate-chip-white-plate.jpg" alt="Muffins">
+                        <p>Muffins</p>
+                    </a>
+                </div>
+                <div class="recipe-item">
+                    <a href="breads.html">
+                        <img src="side-view-breads-as-sliced-seeded-brown-cob-rye-white-ones-bowl-cutting-board-wooden-background.jpg" alt="Breads">
+                        <p>Breads</p>
+                    </a>
+                </div>
+                <div class="recipe-item">
+                    <a href="scones.html">
+                        <img src="stack-delectable-cookies-marble.jpg" alt="Scones">
+                        <p>Scones</p>
+                    </a>
+                </div>
+                <div class="recipe-item">
+                    <a href="biscotti.html">
+                        <img src="italian-tuscan-traditional-cookies-cantuccini-with-almonds-grey-concrete-table.jpg" alt="Biscotti">
+                        <p>Biscotti</p>
+                    </a>
+                </div>
+                <div class="recipe-item">
+                    <a href="donuts.html">
+                        <img src="top-view-glazed-donuts.jpg" alt="Donuts">
+                        <p>Donuts</p>
+                    </a>
+                </div>
+                <div class="recipe-item">
+                    <a href="macarons.html">
+                        <img src="top-view-macarons-bowl-with-mint.jpg" alt="Macarons">
+                        <p>Macarons</p>
+                    </a>
+                </div>
+                <div class="recipe-item">
+                    <a href="cheesecakes.html">
+                        <img src="homemade-newyork-cheesecake-with-frozen-berries-mint-healthy-organic-dessert-top-view.jpg" alt="Cheesecakes">
+                        <p>Cheesecakes</p>
+                    </a>
+                </div>
+                <div class="recipe-item">
+                    <a href="galettes.html">
+                        <img src="cookies-small-tray-cup-tea-marble-table.jpg" alt="Galettes">
+                        <p>Galettes</p>
+                    </a>
+                </div>
+                <div class="recipe-item">
+                    <a href="lemon-bars.html">
+                        <img src="assortment-delicious-homemade-goodies.jpg" alt="Lemon Bars">
+                        <p>Lemon Bars</p>
+                    </a>
+                </div>
+                <div class="recipe-item">
+                    <a href="eclairs.html">
+                        <img src="eclairs-profiteroles-with-black-chocolate-white-chocolate-with-custard-inside-traditional-french-dessert.jpg" alt="Eclairs">
+                        <p>Eclairs</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2 class="fade-in">About Us</h2>
+            <p class="fade-in">At Baking Bliss, we share our passion for baking with the world. Join us for tips, tricks, and tasty recipes!</p>
+        </section>
+
+        <section id="contact">
+            <h2 class="fade-in">Contact Us</h2>
+            <p class="fade-in">Email: info@bakingbliss.com</p>
+        </section>
+    </main>
+
+    <footer>
+        <p class="fade-in">© 2024 Baking Bliss. All rights reserved.</p>
+    </footer>
+    <script src="scriptofscript.js"></script>
+</body>
+</html>
